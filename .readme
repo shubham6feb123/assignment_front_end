@@ -1,0 +1,39 @@
+-- post request url http://localhost:8000/api/v1/register_user
+
+api.post(url,{
+  "name":"shubham sharma",
+  "email":"shubham@gmail.com",
+  "mobile":"+91868876565554",
+  "dob":"28-01-2001",
+  "password":"bahubali@1",
+  "confirmpassword":"bahubali@1"
+}) 
+
+-- post request url baseurl/login_user
+
+api.post(url,{
+  "email":"shubham@gmail.com",
+  "password":"bahubali@1"
+})
+
+-- post request url baseurl/register_product
+
+api.post(url,{
+  "user_id":1,
+  "email":"shubham@gmail.com",
+  "product_id":"787gyghiuyty",
+  "product_name":"phate joote",
+  "company":"Abibas",
+  "category":"shoes",
+  "purchase_date":"29-01-2001",
+  "under_warranty":false,
+  "description":"NOT AVAILABLE",
+  "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROfXyP5m-PLcLQ76H3YMjjhBWXlqfuv5V9ZjJfyT601A&s"
+})
+
+
+-- get request url baseurl/get_products?email=shubham@gmail.com&user_id=1
+
+api.get(url,
+
+
